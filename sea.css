@@ -93,6 +93,7 @@ nav a:hover {
   padding: 12rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  border-radius: 12px;
   text-align: center;
 }
 .hero h2 {
@@ -286,7 +287,7 @@ footer a:hover {
     height: auto;
   }
   .images img {
-    height: auto;
+    height: 250px;
   }
   .cards {
     align-items: flex-start;
