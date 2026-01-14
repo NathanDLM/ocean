@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Meta: encodage et viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre et description pour la page Contact -->
+    <title>Contact - Odyssée Marine</title>
+    <meta name="description" content="Contactez Odyssée Marine pour demandes de devis et informations sur nos voyages marins">
+
+    <!-- Feuille de styles commune -->
+    <link rel="stylesheet" href="sea.css">
+</head>
+<body>
+    <!-- Header: marque et navigation -->
+    <header>
+        <div class="container header-inner">
+            <h1 class="brand"><a href="index.html">Odyssée Marine</a></h1>
+
+            <!-- Hamburger pour mobile -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">☰</label>
+
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu principal: formulaire de contact simple -->
+    <main class="container">
+        <h2>Contactez-nous</h2>
+        <p>Vous avez une question ou souhaitez un devis ? Remplissez le formulaire ci-dessous.</p>
+
+        <!-- Formulaire: action="#" pour démonstration, remplacer par endpoint réel en production -->
+        <form class="contact-form" action="#" method="post" aria-label="Formulaire de contact">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="btn" style="width: 20%;" type="submit">Envoyer</button>
+        </form>
+    </main>
+
+    <!-- Footer: mentions légales et copyright -->
+    <footer>
+        <div class="container footer-inner" style="justify-content: center;">
+            <p>&copy; 2026 Odyssée Marine</p>
+        </div>
+    </footer>
+</body>
+</html>

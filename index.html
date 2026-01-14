@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Meta: encodage et viewport pour responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre et description pour SEO -->
+    <title>Odyssée Marine - Agence de voyage</title>
+    <meta name="description" content="Odyssée Marine - voyages et escapades sur le thème de la mer">
+
+    <!-- Feuille de styles principale -->
+    <link rel="stylesheet" href="sea.css">
+</head>
+
+<body>
+    <!-- Header: marque et navigation principale -->
+    <header>
+        <div class="container header-inner">
+            <h1 class="brand"><a href="index.html">Odyssée Marine</a></h1>
+
+            <!-- Bouton hamburger pour petits écrans.
+                 NOTE: le `checkbox` sert de bascule (toggle) sans JavaScript.
+                 Le label suivant est associé au checkbox et déclenche le changement d'état.
+                 En CSS, on cible l'état coché avec `.nav-toggle:checked ~ nav ul`
+                 (sélecteur frère général) pour afficher/masquer le menu mobile. -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+            <!-- Le label agit comme le bouton visible (icône hamburger) lié au checkbox -->
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">☰</label>
+
+            <!-- Navigation principale (utiliser <nav> pour l'accessibilité).
+                 IMPORTANT: placer le <nav> après le checkbox permet au sélecteur
+                 CSS `.nav-toggle:checked ~ nav ul` de fonctionner (frère général). -->
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Accueil -->
+        <section class="hero">
+            <!-- Video background wrapper placé directement sous .hero
+                 pour que la vidéo occupe toute la hauteur/largeur de la section -->
+            <div class="video-background" aria-hidden="true">
+                <video class="bg-video" autoplay muted loop playsinline preload="metadata" role="presentation">
+                    <source src="assets/videos/beach_background.mp4" type="video/mp4">
+                </video>
+                <!-- Overlay pour améliorer contraste texte/vidéo -->
+                <div class="hero-overlay" aria-hidden="true"></div>
+            </div>
+
+            <div class="container">
+                <h2>Voyagez au rythme des marées</h2>
+                <p>Excursions, croisières et séjours sur mesure pour les amoureux de l'océan.</p>
+                <a class="btn-subtitle" href="destinations.html">Voir les destinations</a>
+            </div>
+        </section>
+
+        <!-- Cartes présentant les offres principales -->
+        <section class="cards">
+            <article class="card">
+                <h3>Îles paradisiaques</h3>
+                <p>Plages de sable blanc, eaux turquoise et villages de pêcheurs. Profitez d'itinéraires sur-mesure,
+                    d'activités locales et d'hébergements respectueux de l'environnement pour un séjour authentique et
+                    reposant.</p>
+                <a href="destinations.html#iles" class="btn small">En savoir plus</a>
+            </article>
+            <article class="card">
+                <h3>Expéditions marines</h3>
+                <p>Observation de la faune, plongée et navigation au large. Nos guides experts vous accompagnent pour
+                    des sorties sécurisées, avec équipement fourni et respect strict des zones protégées afin d'observer
+                    les cétacés et autres espèces dans leur habitat naturel.</p>
+                <a href="destinations.html#expeditions" class="btn small">En savoir plus</a>
+            </article>
+            <article class="card">
+                <h3>Séjours détente</h3>
+                <p>Hôtels en bord de mer, spa et gastronomie marine. Choisissez un package personnalisé incluant
+                    massages, excursions culinaires et temps libres pour simplement profiter du panorama et du rythme
+                    tranquille de la côte.</p>
+                <a href="destinations.html#sejours" class="btn small">En savoir plus</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <p>&copy; 2026 Odyssée Marine — Tous droits réservés</p>
+            <p><a href="contact.html">Nous contacter</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

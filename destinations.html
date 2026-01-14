@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Meta: encodage et viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre et description pour la page Destinations -->
+    <title>Destinations - Odyssée Marine</title>
+    <meta name="description" content="Destinations proposées par Odyssée Marine : îles, expéditions et séjours détente">
+
+    <!-- Styles globaux -->
+    <link rel="stylesheet" href="sea.css">
+</head>
+
+<body>
+    <!-- Header et navigation -->
+    <header>
+        <div class="container header-inner">
+            <h1 class="brand"><a href="index.html">Odyssée Marine</a></h1>
+
+            <!-- Hamburger pour mobile -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">☰</label>
+
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu principal: liste des catégories de destinations -->
+    <main class="containerdest">
+        <h1>Nos destinations</h1>
+
+        <!-- Îles: courts textes descriptifs, lien vers détails si nécessaire -->
+        <section id="iles" class="sectiondest">
+            <h2>Îles paradisiaques</h2>
+            <p>Découvrez des plages isolées, villages authentiques et hébergements de charme.</p>
+            <div class="images">
+                <img src="assets/images/Bords_de_mer.jpg" alt="Île paradisiaque">
+                <img src="assets/images/Hotel_plage.jpg" alt="Hôtel en bord de mer">
+                <img src="assets/images/Villages_authentiques.jpg" alt="Village authentique">
+            </div>
+        </section>
+
+        <!-- Expéditions: activités et observations -->
+        <section id="expeditions" class="sectiondest">
+            <h2>Expéditions marines</h2>
+            <p>Observation des mammifères marins, plongée et navigation d'aventure.</p>
+            <div class="images">
+                <img src="assets/images/fond_marin1.jpg" alt="fond marin">
+                <img src="assets/images/fond_marin3.jpg" alt="fond marin">
+                <img src="assets/images/fond_marin2.jpg" alt="fond marin">
+            </div>
+        </section>
+
+        <!-- Séjours détente: hébergement et bien-être -->
+        <section id="sejours" class="sectiondest">
+            <h2>Séjours détente</h2>
+            <p>Séjours balnéaires, spa et gastronomie locale pour une vraie pause marine.</p>
+            <div class="images">
+                <img src="assets/images/spa.jpg" alt="Spa en bord de mer">
+                <img src="assets/images/séjour_balnéaire.jpg" alt="Détente sur la plage">
+                <img src="assets/images/gastronomie.jpg" alt="Gastronomie locale">
+        </section>
+
+        <p><a class="btn" style="width: 20%;" href="index.html">Retour à l'accueil</a></p>
+    </main>
+
+    <!-- Footer: informations légales et contacts rapides -->
+    <footer>
+        <div class="container footer-inner" style="justify-content: center;">
+            <p>&copy; 2026 Odyssée Marine</p>
+        </div>
+    </footer>
+</body>
+
+</html>
