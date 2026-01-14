@@ -43,6 +43,8 @@ header {
   background-color: #29b8df3d;
   border-bottom: 1px solid #233d48;
   box-shadow: 0px 10px 10px rgba(2, 6, 23, 0.08);
+  position: relative; /* conteneur pour le menu absolu */
+  z-index: 10; /* placer l'en-tête au-dessus du contenu principal */
 }
 .header-inner {
   display: flex;
@@ -83,6 +85,8 @@ nav a:hover {
   display: none;
   font-size: 1.4rem;
   cursor: pointer;
+  position: relative;
+  z-index: 20; /* s'assurer que l'icône burger reste au-dessus du contenu */
 }
 
 /* Hero / CTA */
@@ -129,6 +133,7 @@ nav a:hover {
   border-radius: 8px;
   text-decoration: none;
   transition: filter 150ms ease, transform 150ms ease;
+  width: 20%;
 }
 .btn.small {
   padding: 0.4rem 0.6rem;
@@ -267,6 +272,7 @@ footer a:hover {
     position: absolute;
     right: 0.5rem;
     top: 70px;
+    z-index: 9999; /* place le menu burger au-dessus des autres calques */
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(2, 6, 23, 0.08);
@@ -285,6 +291,7 @@ footer a:hover {
     flex-direction: column;
     gap: 0.6rem;
     height: auto;
+    width: 100%;
   }
   .images img {
     height: 250px;
