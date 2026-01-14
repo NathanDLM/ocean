@@ -290,11 +290,10 @@ footer a:hover {
   .images {
     flex-direction: column;
     gap: 0.6rem;
-    height: auto;
     width: 100%;
   }
   .images img {
-    height: 250px;
+    width: auto;
   }
   .cards {
     align-items: flex-start;
@@ -318,6 +317,11 @@ footer a:hover {
   .hero h2 {
     font-size: 1.6rem;
   }
+
+  .btn{
+    width: 100%;
+  }
+
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
